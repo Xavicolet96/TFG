@@ -9,23 +9,23 @@ public class EdgeObject : MonoBehaviour
 
     public EdgeObject(Vector3 v1, Vector3 v2)
     {
-        edge = GameObject.CreatePrimitive(PrimitiveType.Cylinder);
-        Vector3 vec = (v1 - v2);
+        //edge = GameObject.CreatePrimitive(PrimitiveType.Cylinder);
+        //Vector3 vec = (v1 - v2);
 
-        float l = vec.magnitude;
-        edge.transform.localScale = new Vector3(0.05f, l/2, 0.05f);
+        //float l = vec.magnitude;
+        //edge.transform.localScale = new Vector3(0.05f, l/2, 0.05f);
 
-        Vector3 midpoint = (v1 + v2) / 2;
-        edge.transform.Translate(midpoint);
+        //Vector3 midpoint = (v1 + v2) / 2;
+        //edge.transform.Translate(midpoint);
 
-        vec = vec.normalized;
+        //vec = vec.normalized;
 
-        //Quaternion.FromToRotation((0,1,0) to vec)
+        ////Quaternion.FromToRotation((0,1,0) to vec)
 
-        float rotz = Vector3.Angle(new Vector3(1, 0, 0), new Vector3(vec.x, vec.y, 0));
-        float roty = Vector3.Angle(new Vector3(0, 0, 1), new Vector3(vec.x, 0, vec.z));
+        //float rotz = Vector3.Angle(new Vector3(1, 0, 0), new Vector3(vec.x, vec.y, 0));
+        //float roty = Vector3.Angle(new Vector3(0, 0, 1), new Vector3(vec.x, 0, vec.z));
 
-        edge.transform.Rotate(0,rotz, roty);
+        //edge.transform.Rotate(0,rotz, roty);
 
     }
     // Start is called before the first frame update
