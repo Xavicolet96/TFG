@@ -1,13 +1,13 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
 
-public class StarterObject : MonoBehaviour
+public class PointObject : ElementObject
 {
     // Start is called before the first frame update
     void Start()
     {
         
-        Controller controller = new Controller();
-        Debug.Log("StarterObject created");
     }
 
     // Update is called once per frame
@@ -15,6 +15,4 @@ public class StarterObject : MonoBehaviour
     {
         
     }
-
-  
 }
